@@ -28,6 +28,20 @@ def starts_with_vowel(s):
 # For an empty array it should return zero
 # For an array with just one element, it should return that element
 def max_min_sum(arr):
-  # YOUR CODE HERE
-  
-  return
+   # YOUR CODE HERE
+  #check for empty array
+  if len(arr)==0:
+    return 0
+  #check for single element array
+  if len(arr) == 1:
+    return arr[0]
+
+  #array has 2 or more elements
+  #get largest value
+  maxNum=max(arr)
+  #get smallest valul
+  minNum=min(arr)
+
+  #add the min and max and return
+  return maxNum+minNum
+
