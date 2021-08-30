@@ -16,9 +16,9 @@ def test(got, expected):
 # Calls the functions in pythonBasics1 with interesting inputs.
 def main():
     # set which functions to test
-    check_odd_range = False
-    check_has_lower_case = True
-    check_longest_word = False
+    check_odd_range = True
+    check_has_lower_case = False
+    check_fizz_buzz = False
 
     if check_odd_range:
         print('Testing odd_range:')
@@ -53,15 +53,19 @@ def main():
         test(pythonBasics1.has_lower_case("2 b or not 2 B"), True)
         test(pythonBasics1.has_lower_case("2 DO OR NOT 2 DO"), False)
 
-    if check_longest_word:
+    if check_fizz_buzz:
         print("-------------------------------------------------------")
-        print('Testing longest_word')
-        test(pythonBasics1.longest_word("This is a test"),"test")
-        test(pythonBasics1.longest_word("Autumn is a second spring when every leaf is a flower"),"flower")
-        test(pythonBasics1.longest_word("The truth springs from arguments amongst friends"),"arguments")
-        test(pythonBasics1.longest_word("He who has a why to live for can bear almost any how"),"almost")
-        test(pythonBasics1.longest_word("It is only those who do nothing who makes no mistake"),"mistake")
-        test(pythonBasics1.longest_word(""),"")
+        print('Testing fizz_buzz')
+        test(pythonBasics1.fizz_buzz(6),"Fizz")
+        test(pythonBasics1.fizz_buzz(45),"FizzBuzz")
+        test(pythonBasics1.fizz_buzz(2),"2")
+        test(pythonBasics1.fizz_buzz(-3),"-3")
+        test(pythonBasics1.fizz_buzz(15),"FizzBuzz")
+        test(pythonBasics1.fizz_buzz(10),"Buzz")
+        test(pythonBasics1.fizz_buzz(21),"Fizz")
+        test(pythonBasics1.fizz_buzz(0),"0")
+        test(pythonBasics1.fizz_buzz(25),"Buzz")
+        test(pythonBasics1.fizz_buzz(101),"101")
 
 if __name__ == '__main__':
   main()
