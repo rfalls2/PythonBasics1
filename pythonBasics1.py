@@ -9,17 +9,17 @@
 # and returns all odd numbers as an array between num1 (inclusive) and num2 (non-inclusive)
 def odd_range(num1, num2):
   # YOUR CODE HERE
-  
+
   return
 
 # Part B. is_power_of
-# Define a function is_power_of(i,j) that takes 2 ints i and j
-# and checks if i is a power of j or not
-# the function should return True indicating that i is a power of j
+# Define a function has_lower_case(s) that takes a string s
+# and checks if a letter in s has a lower case char
+# the function should return True indicating that s has a lower case char
 # otherwise return False
-def is_power_of(i,j):
+def has_lower_case(s):
   # YOUR CODE HERE
-
+  
   return
 
 # Part C. longest_word

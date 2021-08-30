@@ -16,8 +16,8 @@ def test(got, expected):
 # Calls the functions in pythonBasics1 with interesting inputs.
 def main():
     # set which functions to test
-    check_odd_range = True
-    check_is_power_of = False
+    check_odd_range = False
+    check_has_lower_case = True
     check_longest_word = False
 
     if check_odd_range:
@@ -35,22 +35,23 @@ def main():
         test(pythonBasics1.odd_range(-6, -2), [-5, -3])
         test(pythonBasics1.odd_range(5, 7), [5])
 
-    if check_is_power_of:
+    if check_has_lower_case:
         print("---------------------------------------------------------")
-        print('Testing is_power_of:')
-        test(pythonBasics1.is_power_of(1,1), True)
-        test(pythonBasics1.is_power_of(10,1), True)
-        test(pythonBasics1.is_power_of(1000,1), True)
-        test(pythonBasics1.is_power_of(2,16), True)
-        test(pythonBasics1.is_power_of(4,16), True)
-        test(pythonBasics1.is_power_of(4,17), False)
-        test(pythonBasics1.is_power_of(3,81), True)
-        test(pythonBasics1.is_power_of(3,-81), False)
-        test(pythonBasics1.is_power_of(-2,16), True)
-        test(pythonBasics1.is_power_of(-2,-16), False)
-        test(pythonBasics1.is_power_of(-2,-8), True)
-        test(pythonBasics1.is_power_of(3,0), False)
-        test(pythonBasics1.is_power_of(0,0), True)
+        print('Testing has_lower_case:')
+        test(pythonBasics1.has_lower_case("i am a strinG"), True)
+        test(pythonBasics1.has_lower_case("no upper case here"), True)
+        test(pythonBasics1.has_lower_case("I Have Multiple Lower Case Chars"), True)
+        test(pythonBasics1.has_lower_case("HELLO"), False)
+        test(pythonBasics1.has_lower_case("I start with an UPPER CASE CHAR"), True)
+        test(pythonBasics1.has_lower_case("ALL UPPER CASE"), False)
+        test(pythonBasics1.has_lower_case(" "), False)
+        test(pythonBasics1.has_lower_case("M"), False)
+        test(pythonBasics1.has_lower_case("o"), True)
+        test(pythonBasics1.has_lower_case("Hello"), True)
+        test(pythonBasics1.has_lower_case("gOODBYE"), True)
+        test(pythonBasics1.has_lower_case("001101"), False)
+        test(pythonBasics1.has_lower_case("2 b or not 2 B"), True)
+        test(pythonBasics1.has_lower_case("2 DO OR NOT 2 DO"), False)
 
     if check_longest_word:
         print("-------------------------------------------------------")
