@@ -16,24 +16,24 @@ def test(got, expected):
 # Calls the functions in pythonBasics1 with interesting inputs.
 def main():
     # set which functions to test
-    check_count_char = True
+    check_odd_range = True
     check_is_power_of = False
     check_longest_word = False
 
-    if check_count_char:
-        print('Testing count_char:')
-        test(pythonBasics1.count_char('vest','v'), 1)
-        test(pythonBasics1.count_char('crypt','c'), 1)
-        test(pythonBasics1.count_char('#python##','#'), 3)
-        test(pythonBasics1.count_char('hello','H'), 0)
-        test(pythonBasics1.count_char('',' '), 0)
-        test(pythonBasics1.count_char('123',''), 0)
-        test(pythonBasics1.count_char('',''), 0)
-        test(pythonBasics1.count_char(' ',' '), 1)
-        test(pythonBasics1.count_char('1211211','1'), 5)
-        test(pythonBasics1.count_char('Abracadabra','a'), 4)
-        test(pythonBasics1.count_char('pXXXp','X'), 3)
-        test(pythonBasics1.count_char(' 6 6',' '), 2)
+    if check_odd_range:
+        print('Testing odd_range:')
+        test(pythonBasics1.odd_range(1, 5), [1, 3])
+        test(pythonBasics1.odd_range(2, 6), [3, 5])
+        test(pythonBasics1.odd_range(100, 111), [101, 103, 105, 107, 109])
+        test(pythonBasics1.odd_range(0, 0), [])
+        test(pythonBasics1.odd_range(0, 10), [1, 3, 5, 7, 9])
+        test(pythonBasics1.odd_range(10, 5), [])
+        test(pythonBasics1.odd_range(9, 14), [9, 11, 13])
+        test(pythonBasics1.odd_range(100, 100), [])
+        test(pythonBasics1.odd_range(-100, -90), [-99, -97, -95, -93, -91])
+        test(pythonBasics1.odd_range(-5, -1), [-5, -3])
+        test(pythonBasics1.odd_range(-6, -2), [-5, -3])
+        test(pythonBasics1.odd_range(5, 7), [5])
 
     if check_is_power_of:
         print("---------------------------------------------------------")

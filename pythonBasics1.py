@@ -5,11 +5,11 @@
 # which is just a placeholder for your code. Make sure to add what is going to be returned.
 
 # Part A. count_char
-# Define a function count_char(s, char) that takes a string and a character
-# and returns the number of times the given character appears in the string
-def count_char(s, char):
+# Define a function odd_range(num1, num2) that takes a starting number (num1) and an ending number (num2)
+# and returns all odd numbers as an array between num1 (inclusive) and num2 (non-inclusive)
+def odd_range(num1, num2):
   # YOUR CODE HERE
-
+  
   return
 
 # Part B. is_power_of
