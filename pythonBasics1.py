@@ -6,7 +6,7 @@
 
 # Part A. odd_range
 # Define a function odd_range(num1, num2) that takes a starting number (num1) and an ending number (num2)
-# and returns all odd numbers as an array between num1 (inclusive) and num2 (non-inclusive)
+# and returns all odd numbers as an array between num1 (inclusive) and num2 (exclusive)
 def odd_range(num1, num2):
   # YOUR CODE HERE
 
@@ -14,8 +14,8 @@ def odd_range(num1, num2):
 
 # Part B. has_lower_case
 # Define a function has_lower_case(s) that takes a string s
-# and checks if a letter in s has a lower case char
-# the function should return True indicating that s has a lower case char
+# and checks if string s contains a lower case char.
+# The function should return True indicating that string s has a lower case char
 # otherwise return False
 def has_lower_case(s):
   # YOUR CODE HERE
