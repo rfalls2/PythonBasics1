@@ -4,31 +4,35 @@
 # The starter code for each function includes a 'return'
 # which is just a placeholder for your code. Make sure to add what is going to be returned.
 
-# Part A. count_char
-# Define a function count_char(s, char) that takes a string and a character
-# and returns the number of times the given character appears in the string
-def count_char(s, char):
+# Part A. odd_range
+# Define a function odd_range(num1, num2) that takes a starting number (num1) and an ending number (num2)
+# and returns all odd numbers as an array between num1 (inclusive) and num2 (exclusive)
+def odd_range(num1, num2):
   # YOUR CODE HERE
 
   return
 
-# Part B. is_power_of
-# Define a function is_power_of(i,j) that takes 2 ints i and j
-# and checks if i is a power of j or not
-# the function should return True indicating that i is a power of j
+# Part B. has_lower_case
+# Define a function has_lower_case(s) that takes a string s
+# and checks if string s contains a lower case char.
+# The function should return True indicating that string s has a lower case char
 # otherwise return False
-def is_power_of(i,j):
+def has_lower_case(s):
   # YOUR CODE HERE
-
+  
   return
 
-# Part C. longest_word
-# Define a function longest_word(s) that takes a string s
-# where s is a sentence made up of words separated by a single space " "
-# and returns the longest word in this sentence
-# if 2 or more words are tied as longest then return the one that occurs LAST in the sentence
-# if s is an empty string return an empty string
-def longest_word(s):
-  # YOUR CODE HERE
+# Part C. fizz_buzz
+# Define a function fizz_buzz(num) that takes an integer num
+# and returns a string based on the following criteria:
 
+# if num is divisible by 3 return "Fizz"
+# if num is divisible by 5 return "Buzz"
+# if num is divisible by 3 and 5 return "FizzBuzz"
+
+# if num is does not meet any of the above criteria or is less than
+# or equal to 0 return the num as a string
+def fizz_buzz(num):
+  # YOUR CODE HERE
+  
   return
